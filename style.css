@@ -43,6 +43,10 @@ h1 {
     margin-bottom: 1rem;
 }
 
+.board.thinking {
+    pointer-events: none;
+}
+
 .cell {
     width: 100px;
     height: 100px;
@@ -107,6 +111,36 @@ h1 {
 
 .container.blur {
     filter: blur(5px);
+}
+
+.game-mode-screen {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--bg-color);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.game-mode-screen.show {
+    display: flex;
+}
+
+.game-mode-form {
+    background-color: var(--cell-bg);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--border-color);
+}
+
+.game-mode-form button {
+    margin: 0.5rem;
 }
 
 .player-name-screen {
