@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="player-name-screen" class="player-name-screen show">
+        <div class="player-name-form">
+            <h2>Enter Player Names</h2>
+            <div class="input-group">
+                <label for="playerX">Player X</label>
+                <input type="text" id="playerX" placeholder="Enter Player X's Name" required>
+            </div>
+            <div class="input-group">
+                <label for="playerO">Player O</label>
+                <input type="text" id="playerO" placeholder="Enter Player O's Name" required>
+            </div>
+            <button id="startGameButton">Start Game</button>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Tic Tac Toe</h1>
+        <div id="turnDisplay" class="turn-display"></div>
+        <div id="board" class="board">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+        </div>
+        <button id="restartButton">Restart</button>
+    </div>
+    <div id="winningMessage" class="winning-message">
+        <div data-winning-message-text></div>
+        <button id="restartButtonWinner">Restart</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
